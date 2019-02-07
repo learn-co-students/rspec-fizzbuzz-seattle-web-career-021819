@@ -2,13 +2,11 @@
 # See README.md for instructions on how to do this
 
 def fizzbuzz(num)
-  num_3 = (num%3 == 0)
-  num_5 = (num%5 == 0)
-  if num_3&&num_5
+  if (num%3 == 0)&&(num%5 == 0)
     "FizzBuzz"
-  elsif num_5
+  elsif (num%5 == 0)
     "Buzz"
-  elsif num_3
+  elsif (num%3 == 0)
     "Fizz"
   else 
     nil
